@@ -294,8 +294,8 @@ button:active {
 }
 
 .caption {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-list {
@@ -305,7 +305,7 @@ button:active {
     margin-top: 8px;
 }
 
-.team-social-media-item {
+.team-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,54 +317,64 @@ button:active {
     background-color: var(--logo-web-color);
 }
 
-.team-link {
-    display: flex;
-    justify-content: center;
-}
+
 
 .team-social-media-item + .team-social-media-item {
     margin-left: 24px;
 }
 
-.team-social-media-item:hover,
-.team-social-media-item:focus,
-.team-social-media-item:active {
+.team-link:hover,
+.team-link:focus,
+.team-link:active {
     background-color: #31D0AA;
 }
 
 /* Selection 4 */
 
 .customer-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 168px;
-        height: 88px;
-        border: 1px solid #8E8F99;
-        border-radius: 4px;
-        cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
 
+}
+
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    cursor: pointer;
+
+    color: #8e8f99;
 }
 
 .customer-item +.customer-item {
     margin-left: 24px;
 }
 
-.customer-item:hover,
-.customer-item:focus,
-.customer-item:active {
-    border: 1px solid var(--logo-web-color);
+.customer-link:hover,
+.customer-link:focus,
+.customer-link:active {
+    outline: 1px solid var(--logo-web-color);
+    color: var(--logo-web-color);
 }
 
+
 .customer-icon {
- fill: #8e8f99;
+    fill: currentColor;
+ /* fill: #8e8f99; */
 }
 
 
 .customer-icon:hover,
 .customer-icon:focus,
 .customer-icon:active {
-    fill: var(--logo-web-color);
+    fill: currentColor;
 }
 
 /* footer */
@@ -472,10 +482,21 @@ footer {
 
  /* cards */
 
+ .caption-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+ }
+
+ .card-text {
+    color: var(--primary-text-color);
+ }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72px;
+    padding-top: 72px;
+    
  }
 
 
@@ -483,9 +504,16 @@ footer {
     width: 360px;
     margin-right: 24px;
     margin-bottom: 48px;
+    
 
     border: 0.5px solid #F4F4FD;
 
+ }
+
+ .link-card {
+    display: block;
+    width: 100%;
+    height: 100%;
  }
 
 .card:nth-child(3n) {
@@ -496,8 +524,8 @@ footer {
     margin-bottom: 0;
  }
 
-.card:hover,
-.card:focus,
-.card:active {
+.link-card:hover,
+.link-card:focus,
+.link-card:active {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
